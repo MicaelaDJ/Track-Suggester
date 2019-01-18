@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Track Suggester</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+
+    <div class="container">
+          <h1>What Course should I take?</h1>
+          <form id="quiz">
+            <div class="form-group">
+              <label for="name">Please Enter your Name:</label>
+              <input id="name" class="form-control" type="text">
+            </div>
+            <ol>
+              <li>What kind of software do you want to make?</li>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="software" value="add" checked>
+                  add
+                </label>
+              </div>
+              <li>What kind of environment do you want to work in?</li>
+              <li>What size company do you want to work in?</li>
+              <li>What kind of Development would you rather work with?</li>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="development" value="front-end" checked>
+                  Front-end
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="development" value="back-end" checked>
+                  Back-end
+                </label>
+              </div>
+              <li>Are you ready to Decide?</li>
+            </ol>
+
+
+
+            <div class="radio">
+              <label>
+                <input type="radio" name="software" value="add" checked>
+                add
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="operator" value="subtract">
+                subtract
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="operator" value="multiply">
+                multiply
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="operator" value="divide">
+                divide
+              </label>
+            </div>
+            <button type="submit" class="btn">Go!</button>
+          </form>
+          <div id="output">
+
+          </div>
+        </div>
+
+  </body>
+</html>
