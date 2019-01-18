@@ -17,15 +17,46 @@
               <input id="name" class="form-control" type="text">
             </div>
             <ol>
-              <li>What kind of software do you want to make?</li>
+              <li>What do you want to build?</li>
               <div class="radio">
                 <label>
-                  <input type="radio" name="software" value="add" checked>
-                  add
+                  <input type="radio" name="build" value="internal" checked>
+                  Internal Software
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="build" value="apps" checked>
+                  High-performance Applications
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="build" value="websites" checked>
+                  Websites
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="build" value="web-apps" checked>
+                  Interactive Web Applications
                 </label>
               </div>
               <li>What kind of environment do you want to work in?</li>
+              
               <li>What size company do you want to work in?</li>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="size" value="small" checked>
+                  Small
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="size" value="large" checked>
+                  Large
+                </label>
+              </div>
               <li>What kind of Development would you rather work with?</li>
               <div class="radio">
                 <label>
@@ -40,34 +71,20 @@
                 </label>
               </div>
               <li>Are you ready to Decide?</li>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="answer" value="yes" checked>
+                  Yes!
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="answer" value="no" checked>
+                  No?
+                </label>
+              </div>
             </ol>
 
-
-
-            <div class="radio">
-              <label>
-                <input type="radio" name="software" value="add" checked>
-                add
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="operator" value="subtract">
-                subtract
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="operator" value="multiply">
-                multiply
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="operator" value="divide">
-                divide
-              </label>
-            </div>
             <button type="submit" class="btn">Go!</button>
           </form>
           <div id="output">
