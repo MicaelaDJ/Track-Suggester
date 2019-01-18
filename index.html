@@ -11,101 +11,101 @@
 
     <div class="container">
       <h1>What Course should I take?</h1>
+
+
+
+      <div class="form-group">
+        <label for="color">Select your favorite color.</label>
+        <input id="colorpicker" class="form-control" type="color">
+      </div>
+
+      <form id="quiz">
         <div class="form-group">
-          <label for="color">Please pick your favorite color.</label>
-          <input id="colorpicker" class="form-control" type="color">
+          <label for="name">Please Enter your Name:</label>
+          <input id="name" class="form-control" type="text">
         </div>
-        <div class="color white" data-value="#fff"></div>
-		    <div class="color grey" data-value="#eaeaea"></div>
-		    <div class="color black" data-value="#000"></div>
 
-        <form id="quiz">
-          <ol>
-            <li>
-            <div class="form-group">
-              <label for="your-name">Please Enter your Name:</label>
-              <input id="your-name" class="form-control" type="text">
-            </div>
-            </li>
+        <ol>
 
-            <li>Would you rather build database or web applications?</li>
-            <div class="radio">
-              <label>
-                <input type="radio" name="build" value="database" checked>
-                Database
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="build" value="web" checked>
-                Web
-              </label>
-            </div>
-
-            <li>Do you want to work on older or new scripts?</li>
-            <div class="radio">
-              <label>
-                <input type="radio" name="scripts" value="older" checked>
-                Older
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="scripts" value="newer" checked>
-                Newer
-              </label>
-            </div>
-
-            <li>What size company do you want to work in?</li>
-            <div class="radio">
-              <label>
-                <input type="radio" name="size" value="small" checked>
-                Small
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="size" value="large" checked>
-                Large
-              </label>
-            </div>
-
-            <li>What kind of Development would you rather work with?</li>
-            <div class="radio">
-              <label>
-                <input type="radio" name="development" value="front-end" checked>
-                Front-end
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="development" value="back-end" checked>
-                Back-end
-              </label>
-            </div>
-
-            <li>Are you ready to Decide?</li>
-            <div class="radio">
-              <label>
-                <input type="radio" name="answer" value="yes" checked>
-                Yes!
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="answer" value="no" checked>
-                No?
-              </label>
-            </div>
-
-          </ol>
-
-            <button type="submit" class="btn" id="btn">Click to find out now!</button>
-          </form>
-          <div id="output">
-            <p>Based on your answers, you should study: <br> <span id="language"></span></p>
+          <li>Would you rather build database or web applications?</li>
+          <div class="radio">
+            <label>
+              <input type="radio" name="build" value="database" checked>
+              Database
+            </label>
           </div>
-        </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="build" value="web" checked>
+              Web
+            </label>
+          </div>
+
+          <li>Do you want to work on older or new scripts?</li>
+          <div class="radio">
+            <label>
+              <input type="radio" name="scripts" value="older" checked>
+              Older
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="scripts" value="newer" checked>
+              Newer
+            </label>
+          </div>
+
+          <li>What size company do you want to work in?</li>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="small" checked>
+              Small
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="large" checked>
+              Large
+            </label>
+          </div>
+
+          <li>What kind of Development would you rather work with?</li>
+          <div class="radio">
+            <label>
+              <input type="radio" name="development" value="front-end" checked>
+              Front-end
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="development" value="back-end" checked>
+              Back-end
+            </label>
+          </div>
+
+          <li>Are you ready to Decide?</li>
+          <div class="radio">
+            <label>
+              <input type="radio" name="answer" value="yes" checked>
+              Yes!
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="answer" value="no" checked>
+              No?
+            </label>
+          </div>
+
+        </ol>
+        <button type="submit" class="btn" id="btn">Click to find out now!</button>
+      </form>
+
+      <div id="output">
+        <p>Based on your answers, you should study: <br> <span id="language"></span></p>
+      </div>
+
+    </div>
 
   </body>
 </html>
