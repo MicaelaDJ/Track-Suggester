@@ -27,10 +27,18 @@ $(document).ready(function() {
       alert("Welcome to the Quiz " + name)
     }
 
-    if (answer !== 'yes') {
+    if (answer === 'no') {
       alert("Select yes when you are ready");
     }
-    else if (size === 'large' && development !== 'front' && build === 'database' && scripts === 'newer') {
+    else if (development === 'back' && scripts === 'older') {
+      $("#language").after("PHP");
+      $("#csharp").hide();
+      $("#css").hide();
+      $("#java").hide();
+      $("#php").show();
+      $("#ruby").hide();
+    }
+    else if (build === 'database' && development === 'back' && scripts === 'newer') {
       $("#language").after("C#");
       $("#csharp").show();
       $("#css").hide();
@@ -38,18 +46,32 @@ $(document).ready(function() {
       $("#php").hide();
       $("#ruby").hide();
     }
-    else if (size === 'large' && development !== 'front' && build === 'web' && scripts === 'newer') {
+    else if (build === 'web' && development === 'back' && scripts === 'newer') {
       $("#language").after("Java");
+      $("#csharp").hide();
+      $("#css").hide();
+      $("#java").show();
+      $("#php").hide();
+      $("#ruby").hide();
+
     }
-    else if (size === 'small' && development !== 'front' && build === 'web' && scripts === 'newer') {
-      $("#language").after("PHP");
-    }
-    else if (development !== 'front' && scripts === 'older') {
+    else if (size === 'small' && development === 'back' && scripts === 'newer') {
       $("#language").after("Ruby");
+      $("#csharp").hide();
+      $("#css").hide();
+      $("#java").hide();
+      $("#php").hide();
+      $("#ruby").show();
     }
     else {
       $("#language").after("CSS");
+      $("#csharp").hide();
+      $("#css").show();
+      $("#java").hide();
+      $("#php").hide();
+      $("#ruby").hide();
     }
+
     event.preventDefault();
   });
 

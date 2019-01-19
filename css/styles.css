@@ -1,13 +1,15 @@
-
+h3 {
+  margin-left: 20px;
+  text-align: center;
+}
 
 img {
-  margin: 40%;
   border-radius: 100px;
-  border: 1px solid grey;
+  border: 5px solid grey;
   padding: 20px;
   width: 180px;
   height: 180px;
-  /*display: none;*/
+  background-color: white;
 }
 
 .btn {
