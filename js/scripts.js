@@ -7,10 +7,6 @@ $(document).ready(function() {
     });
   }
 
-
-
-
-
   $("form#quiz").submit(function(event) {
 
     var name = $("#name").val();
@@ -35,12 +31,12 @@ $(document).ready(function() {
       $("#csharp").hide();
       $("#css").hide();
       $("#java").hide();
-      $("#php").show();
+      $("#php").fadeIn();
       $("#ruby").hide();
     }
     else if (build==='database' && scripts==='newer' && size==='large' && development==='back-end') {
       $("#language").after("C#");
-      $("#csharp").show();
+      $("#csharp").fadeIn();
       $("#css").hide();
       $("#java").hide();
       $("#php").hide();
@@ -50,7 +46,7 @@ $(document).ready(function() {
       $("#language").after("Java");
       $("#csharp").hide();
       $("#css").hide();
-      $("#java").show();
+      $("#java").fadeIn();
       $("#php").hide();
       $("#ruby").hide();
     }
@@ -60,12 +56,12 @@ $(document).ready(function() {
       $("#css").hide();
       $("#java").hide();
       $("#php").hide();
-      $("#ruby").show();
+      $("#ruby").fadeIn();
     }
     else {
       $("#language").after("CSS");
       $("#csharp").hide();
-      $("#css").show();
+      $("#css").fadeIn();
       $("#java").hide();
       $("#php").hide();
       $("#ruby").hide();
@@ -73,10 +69,4 @@ $(document).ready(function() {
 
     event.preventDefault();
   });
-
 });
-// function pickColor() {
-//   $("#colorpicker").click(function(){
-//     $("button#btn").css("background-color",$("#colorpicker").val());
-//   });
-// }
