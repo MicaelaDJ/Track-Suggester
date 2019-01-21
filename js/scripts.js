@@ -20,17 +20,17 @@ $(document).ready(function() {
     var answer = $("input:radio[name=answer]:checked").val();
     var scripts = $("input:radio[name=scripts]:checked").val();
 
-    if (0 === name.length) {
+    if (0===name.length && answer==='yes' || 0===name.length && answer==='no') {
       alert("Please enter your name");
+    }
+    else if (answer==='no') {
+      alert("Please answer yes when ready");
     }
     else {
       alert("Welcome to the Quiz " + name)
     }
 
-    if (answer === 'no') {
-      alert("Select yes when you are ready");
-    }
-    else if (development === 'back' && scripts === 'older') {
+    if (scripts==='older' && development==='back-end') {
       $("#language").after("PHP");
       $("#csharp").hide();
       $("#css").hide();
@@ -38,7 +38,7 @@ $(document).ready(function() {
       $("#php").show();
       $("#ruby").hide();
     }
-    else if (build === 'database' && development === 'back' && scripts === 'newer') {
+    else if (build==='database' && scripts==='newer' && size==='large' && development==='back-end') {
       $("#language").after("C#");
       $("#csharp").show();
       $("#css").hide();
@@ -46,16 +46,15 @@ $(document).ready(function() {
       $("#php").hide();
       $("#ruby").hide();
     }
-    else if (build === 'web' && development === 'back' && scripts === 'newer') {
+    else if (build==='web' && scripts==='newer' && size==='large' && development==='back-end') {
       $("#language").after("Java");
       $("#csharp").hide();
       $("#css").hide();
       $("#java").show();
       $("#php").hide();
       $("#ruby").hide();
-
     }
-    else if (size === 'small' && development === 'back' && scripts === 'newer') {
+    else if (scripts==='newer' && size==='small' && development==='back-end') {
       $("#language").after("Ruby");
       $("#csharp").hide();
       $("#css").hide();
